@@ -1,1 +1,18 @@
-<p>c-navbar works!</p>
+<header>
+  <nav class="navbar">
+    <a routerLink="/" class="logo">Dottoressa Roberta Perrone</a>
+    
+    <ul class="nav-links" [class.active]="isMenuOpen">
+      <li><a routerLink="/home" (click)="closeMenu()">Home</a></li>
+      <li><a routerLink="/servizi" (click)="closeMenu()">Servizi</a></li>
+      <li><a routerLink="/about" (click)="closeMenu()">Chi Siamo</a></li>
+      <li><a routerLink="/contatti" (click)="closeMenu()">Contatti</a></li>
+    </ul>
+    
+    <div class="hamburger" (click)="toggleMenu()">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+  </nav>
+</header>

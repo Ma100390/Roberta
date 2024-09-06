@@ -1,0 +1,110 @@
+/* home-page.component.css */
+
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Hero Section */
+  .hero {
+    background-color: #e0f7fa; /* Light teal background for a calm feel */
+    padding: 4rem 2rem;
+    text-align: center;
+    border-bottom: 2px solid #00796b; /* Darker teal border for emphasis */
+  }
+  
+  .hero-content {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  .hero h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    color: #004d40; /* Dark teal for text */
+  }
+  
+  .hero p {
+    font-size: 1.25rem;
+    margin-bottom: 2rem;
+    color: #00796b; /* Medium teal for text */
+  }
+  
+  .btn-primary {
+    background-color: #00796b;
+    color: white;
+    padding: 0.75rem 1.5rem;
+    text-decoration: none;
+    border-radius: 5px;
+    display: inline-block;
+    font-weight: bold;
+  }
+  
+  .btn-primary:hover {
+    background-color: #004d40;
+  }
+  
+  /* About Section */
+  .about {
+    padding: 3rem 2rem;
+    background-color: #fafafa; /* Light gray background for a neutral feel */
+    text-align: center;
+  }
+  
+  .about h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: #004d40; /* Dark teal for consistency */
+  }
+  
+  .about p {
+    font-size: 1.125rem;
+    margin-bottom: 1.5rem;
+    color: #555; /* Dark gray for readability */
+  }
+  
+  .btn-secondary {
+    background-color: #004d40;
+    color: white;
+    padding: 0.75rem 1.5rem;
+    text-decoration: none;
+    border-radius: 5px;
+    display: inline-block;
+    font-weight: bold;
+  }
+  
+  .btn-secondary:hover {
+    background-color: #00796b;
+  }
+  
+  /* Impact Section */
+  .impact {
+    padding: 3rem 2rem;
+    background-color: #e0f2f1; /* Very light teal for contrast */
+    text-align: center;
+  }
+  
+  .impact h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: #004d40; /* Dark teal for consistency */
+  }
+  
+  .impact-item {
+    margin: 1.5rem 0;
+  }
+  
+  .impact-item h3 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+    color: #00796b; /* Medium teal for headings */
+  }
+  
+  .impact-item p {
+    font-size: 1.125rem;
+    color: #555; /* Dark gray for text */
+  }
+  
