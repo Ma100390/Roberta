@@ -1,110 +1,189 @@
-/* home-page.component.css */
+/* Importa Google Font per una migliore estetica */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 
 /* General Styles */
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  
-  /* Hero Section */
-  .hero {
-    background-color: #e0f7fa; /* Light teal background for a calm feel */
-    padding: 4rem 2rem;
-    text-align: center;
-    border-bottom: 2px solid #00796b; /* Darker teal border for emphasis */
-  }
-  
-  .hero-content {
-    max-width: 800px;
-    margin: 0 auto;
-  }
-  
-  .hero h1 {
-    font-size: 2.5rem;
-    margin-bottom: 1rem;
-    color: #004d40; /* Dark teal for text */
-  }
-  
-  .hero p {
-    font-size: 1.25rem;
-    margin-bottom: 2rem;
-    color: #00796b; /* Medium teal for text */
-  }
-  
-  .btn-primary {
-    background-color: #00796b;
-    color: white;
-    padding: 0.75rem 1.5rem;
-    text-decoration: none;
-    border-radius: 5px;
-    display: inline-block;
-    font-weight: bold;
-  }
-  
-  .btn-primary:hover {
-    background-color: #004d40;
-  }
-  
-  /* About Section */
-  .about {
-    padding: 3rem 2rem;
-    background-color: #fafafa; /* Light gray background for a neutral feel */
-    text-align: center;
-  }
-  
-  .about h2 {
-    font-size: 2rem;
-    margin-bottom: 1rem;
-    color: #004d40; /* Dark teal for consistency */
-  }
-  
-  .about p {
-    font-size: 1.125rem;
-    margin-bottom: 1.5rem;
-    color: #555; /* Dark gray for readability */
-  }
-  
-  .btn-secondary {
-    background-color: #004d40;
-    color: white;
-    padding: 0.75rem 1.5rem;
-    text-decoration: none;
-    border-radius: 5px;
-    display: inline-block;
-    font-weight: bold;
-  }
-  
-  .btn-secondary:hover {
-    background-color: #00796b;
-  }
-  
-  /* Impact Section */
-  .impact {
-    padding: 3rem 2rem;
-    background-color: #e0f2f1; /* Very light teal for contrast */
-    text-align: center;
-  }
-  
-  .impact h2 {
-    font-size: 2rem;
-    margin-bottom: 1rem;
-    color: #004d40; /* Dark teal for consistency */
-  }
-  
-  .impact-item {
-    margin: 1.5rem 0;
-  }
-  
-  .impact-item h3 {
-    font-size: 1.5rem;
-    margin-bottom: 0.5rem;
-    color: #00796b; /* Medium teal for headings */
-  }
-  
-  .impact-item p {
-    font-size: 1.125rem;
-    color: #555; /* Dark gray for text */
-  }
-  
+  font-family: 'Roboto', sans-serif; /* Font modern e leggibile */
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  line-height: 1.6;
+  color: #333; /* Colore grigio scuro per il testo */
+}
+
+/* Hero Section */
+.hero {
+  background: linear-gradient(to right, #fde0e0, #f9b3b3); /* Sfondo a gradiente con toni rossi */
+  padding: 6rem 2rem; /* Maggiore padding per una sensazione di spazio */
+  text-align: center;
+  border-bottom: 2px solid #c62828; /* Bordo rosso scuro per l'enfasi */
+  position: relative;
+}
+
+.hero-content {
+  max-width: 800px;
+  margin: 0 auto;
+  z-index: 1; /* Assicura che il contenuto sia sopra eventuali sovrapposizioni */
+  position: relative;
+}
+
+.hero h1 {
+  font-size: 3.5rem; /* Dimensione del font maggiore per un impatto visivo */
+  margin-bottom: 1.5rem;
+  color: #c62828; /* Rosso scuro per il testo */
+  font-weight: 700; /* Font bold per l'enfasi */
+  line-height: 1.2; /* Altezza della linea migliorata per la leggibilità */
+}
+
+.hero p {
+  font-size: 1.375rem; /* Dimensione del font leggermente più piccola rispetto a h1 */
+  margin-bottom: 2.5rem;
+  color: #d32f2f; /* Rosso medio per il testo */
+}
+
+.btn-primary {
+  background-color: #d32f2f; /* Rosso medio per il pulsante primario */
+  color: white;
+  padding: 0.75rem 2rem; /* Maggiore padding per un pulsante più prominente */
+  text-decoration: none;
+  border-radius: 8px; /* Bordo arrotondato per un look moderno */
+  display: inline-block;
+  font-weight: 600; /* Font semi-bold per una migliore leggibilità */
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.btn-primary:hover {
+  background-color: #c62828; /* Rosso più scuro al passaggio del mouse */
+  transform: translateY(-2px); /* Effetto di sollevamento al passaggio del mouse */
+}
+
+/* About Section */
+.about {
+  padding: 4rem 2rem; /* Maggiore padding per una sensazione di spazio */
+  background-color: #fafafa; /* Sfondo grigio chiaro per un aspetto neutro */
+  text-align: center;
+}
+
+.about h2 {
+  font-size: 2.75rem; /* Dimensione del font maggiore per una migliore enfasi */
+  margin-bottom: 1.5rem;
+  color: #c62828; /* Rosso scuro per coerenza */
+  font-weight: 700; /* Font bold per l'enfasi */
+  line-height: 1.3; /* Altezza della linea migliorata per la leggibilità */
+}
+
+.about p {
+  font-size: 1.25rem;
+  margin-bottom: 2rem;
+  color: #555; /* Grigio scuro per la leggibilità */
+}
+
+.btn-secondary {
+  background-color: #c62828; /* Rosso scuro per il pulsante secondario */
+  color: white;
+  padding: 0.75rem 2rem; /* Maggiore padding per un pulsante più prominente */
+  text-decoration: none;
+  border-radius: 8px; /* Bordo arrotondato per coerenza con il pulsante primario */
+  display: inline-block;
+  font-weight: 600; /* Font semi-bold per una migliore leggibilità */
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.btn-secondary:hover {
+  background-color: #d32f2f; /* Rosso medio al passaggio del mouse */
+  transform: translateY(-2px); /* Effetto di sollevamento al passaggio del mouse */
+}
+
+/* Services Section */
+.services {
+  padding: 4rem 2rem; /* Maggiore padding per una sensazione di spazio */
+  background-color: #fde0e0; /* Rosso molto chiaro per contrasto */
+}
+
+.services h2 {
+  font-size: 2.75rem; /* Dimensione del font maggiore per una migliore enfasi */
+  margin-bottom: 2rem;
+  color: #c62828; /* Rosso scuro per coerenza */
+  text-align: center;
+  font-weight: 700; /* Font bold per l'enfasi */
+  line-height: 1.3; /* Altezza della linea migliorata per la leggibilità */
+}
+
+.service-category {
+  margin: 2rem auto;
+  max-width: 900px; /* Maggiore max-width per un layout più spazioso */
+}
+
+.service-item {
+  margin: 2rem 0;
+  padding: 1.5rem; /* Padding aggiunto per una migliore separazione */
+  background-color: #ffffff; /* Sfondo bianco per gli elementi del servizio */
+  border-radius: 8px; /* Angoli arrotondati per un look moderno */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15); /* Ombra leggermente più profonda per maggiore profondità */
+}
+
+.service-item h4 {
+  font-size: 1.75rem;
+  margin-bottom: 1rem;
+  color: #d32f2f; /* Rosso medio per le intestazioni */
+  font-weight: 600; /* Font semi-bold per una migliore leggibilità */
+  line-height: 1.2; /* Altezza della linea migliorata per la leggibilità */
+}
+
+.service-item ul {
+  list-style-type: disc;
+  padding-left: 1.5rem;
+  color: #555; /* Grigio scuro per il testo */
+}
+
+.service-item li {
+  font-size: 1.125rem;
+  margin-bottom: 0.75rem;
+}
+
+/* Contact Section */
+.contact {
+  padding: 4rem 2rem; /* Maggiore padding per una sensazione di spazio */
+  background-color: #fafafa; /* Grigio chiaro per coerenza */
+  text-align: center;
+}
+
+.contact h2 {
+  font-size: 2.75rem; /* Dimensione del font maggiore per una migliore enfasi */
+  margin-bottom: 1.5rem;
+  color: #c62828; /* Rosso scuro per coerenza */
+  font-weight: 700; /* Font bold per l'enfasi */
+  line-height: 1.3; /* Altezza della linea migliorata per la leggibilità */
+}
+
+.contact p {
+  font-size: 1.25rem;
+  margin-bottom: 2rem;
+  color: #555; /* Grigio scuro per la leggibilità */
+}
+
+/* Additional Styles for h3 */
+h3 {
+  font-size: 2.25rem; /* Leggermente più grande del solito per enfasi */
+  margin-bottom: 1rem; /* Spazio sotto il titolo */
+  color: #c62828; /* Rosso scuro per coerenza */
+  font-weight: 600; /* Font semi-bold per una migliore leggibilità */
+  text-transform: capitalize; /* Capitalizza solo la prima lettera */
+  letter-spacing: 0.5px; /* Lettere leggermente distanziate per leggibilità */
+  line-height: 1.3; /* Altezza della linea migliorata per la leggibilità */
+}
+
+/* Blockquote Styles */
+blockquote {
+  border-left: 4px solid #c62828; /* Bordo rosso scuro */
+  padding-left: 1rem; /* Padding per una migliore leggibilità */
+  margin: 2rem 0; /* Spazio sopra e sotto */
+  font-style: italic; /* Testo in corsivo per enfasi */
+  color: #555; /* Grigio scuro per il testo */
+}
+
+blockquote footer {
+  font-size: 1.125rem; /* Dimensione del font per il footer */
+  color: #c62828; /* Rosso scuro per il nome dell'autore */
+  margin-top: 0.5rem; /* Spazio sopra il nome dell'autore */
+}

@@ -77,3 +77,55 @@
         display: flex;
     }
 }
+@media (max-width: 30em) { /* Adatta per schermi più piccoli come smartphone in modalità verticale */
+    .nav-links {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        position: fixed;
+        top: 9%;
+        left: 0;
+        width: 100%;
+        height: 100vh;
+        background-color: #333;
+        z-index: 10;
+        max-height: 0; 
+        overflow: hidden; 
+        opacity: 0; 
+        visibility: hidden; 
+        transition: max-height 0.3s ease, opacity 0.3s ease, visibility 0.3s ease;
+    }
+
+    .navbar .nav-links a {
+        font-size: 1.75rem; /* Ridotto per adattarsi meglio ai piccoli schermi */
+        margin: 0.75rem; /* Spaziatura ridotta */
+    }
+
+    .nav-links.active {
+        max-height: 100vh; 
+        opacity: 1; 
+        visibility: visible; 
+    }
+
+    .hamburger {
+        display: flex;
+        flex-direction: column;
+        justify-content: center; /* Centra l'icona hamburger */
+        align-items: center; /* Centra l'icona hamburger */
+        cursor: pointer; /* Cambia il cursore per indicare che è cliccabile */
+    }
+
+    .hamburger div {
+        width: 2rem; /* Ridotto per spazi più piccoli */
+        height: 0.2rem; /* Ridotto per spazi più piccoli */
+        background-color: #fff; /* Colore per visibilità */
+        margin: 0.3rem 0; /* Spaziatura tra le righe dell'icona */
+        transition: background-color 0.3s ease; /* Transizione per l'effetto di hover */
+    }
+
+    .hamburger:hover div {
+        background-color: #bbb; /* Colore di hover per l'icona */
+    }
+}
+
