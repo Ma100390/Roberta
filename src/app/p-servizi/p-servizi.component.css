@@ -3,12 +3,14 @@
     padding: 4rem 2rem; /* Maggiore padding per una sensazione di spazio */
      /* Rosso molto chiaro per contrasto */
   }
-  .image{
-    background-image: url('/assets/Images/servizi.webp');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    height: 100vh;
+  .image {
+    background-image: url('/assets/Images/servizi.webp'); /* Immagine di sfondo */
+    background-size: cover;        /* Adatta l'immagine per coprire l'intero elemento */
+    background-position: center;   /* Centra l'immagine all'interno dell'elemento */
+    background-repeat: no-repeat;  /* Impedisce la ripetizione dell'immagine */
+    height: 100vh;                 /* Imposta l'altezza del div al 100% dell'altezza della viewport */
+    width: 100%;                   /* Imposta la larghezza del div al 100% della larghezza della viewport */
+    position: relative;            /* Necessario per posizionare l'immagine in modo assoluto se necessario */
   }
   .services h2 {
     font-size: 2.75rem; /* Dimensione del font maggiore per una migliore enfasi */
