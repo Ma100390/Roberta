@@ -1,0 +1,46 @@
+/* styles.css */
+
+/* Centra l'immagine nella pagina */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+}
+
+.logo-container {
+    /* Puoi aggiungere un bordo al contenitore, se vuoi */
+    display: inline-block;
+    padding: 10px;
+    border-radius: 50%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.logo-container img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    animation: rotate 5s linear infinite, pulse 2s ease-in-out infinite;
+}
+
+/* Animazione di rotazione */
+@keyframes rotate {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+/* Animazione di pulsazione (ingrandimento) */
+@keyframes pulse {
+    0%, 100% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+}
