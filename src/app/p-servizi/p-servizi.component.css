@@ -4,7 +4,7 @@
      /* Rosso molto chiaro per contrasto */
   }
   .image {
-    background-image: url('/assets/Images/servizi.webp'); /* Immagine di sfondo */
+    background-image: url('/assets/Images/basic.jpg'); /* Immagine di sfondo */
     background-size: cover;        /* Adatta l'immagine per coprire l'intero elemento */
     background-position: center;   /* Centra l'immagine all'interno dell'elemento */
     background-repeat: no-repeat;  /* Impedisce la ripetizione dell'immagine */

@@ -64,7 +64,7 @@
 }
 .about-container {
   display: flex;
-  align-items: flex-start; /* Allinea l'immagine e il testo in alto */
+  align-items: flex-end; /* Allinea l'immagine e il testo in alto */
 }
 
 .about-image {
@@ -86,21 +86,6 @@
   text-align: center; /* Centro l'intestazione */
 }
 
-.btn-secondary {
-  background-color: #c62828; /* Rosso scuro per il pulsante secondario */
-  color: white;
-  padding: 0.75rem 2rem; /* Maggiore padding per un pulsante più prominente */
-  text-decoration: none;
-  border-radius: 8px; /* Bordo arrotondato per coerenza con il pulsante primario */
-  display: inline-block;
-  font-weight: 600; /* Font semi-bold per una migliore leggibilità */
-  transition: background-color 0.3s ease, transform 0.3s ease;
-}
-
-.btn-secondary:hover {
-  background-color: #d32f2f; /* Rosso medio al passaggio del mouse */
-  transform: translateY(-2px); /* Effetto di sollevamento al passaggio del mouse */
-}
 
 
 
