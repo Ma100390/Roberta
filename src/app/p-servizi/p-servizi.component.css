@@ -1,164 +1,99 @@
-/* Services Section */
-.services {
-    padding: 4rem 2rem; /* Maggiore padding per una sensazione di spazio */
-     /* Rosso molto chiaro per contrasto */
-  }
-  .image {
-    background-image: url('/assets/Images/basic.jpg'); /* Immagine di sfondo */
-    background-size: cover;        /* Adatta l'immagine per coprire l'intero elemento */
-    background-position: center;   /* Centra l'immagine all'interno dell'elemento */
-    background-repeat: no-repeat;  /* Impedisce la ripetizione dell'immagine */
-    height: 100vh;                 /* Imposta l'altezza del div al 100% dell'altezza della viewport */
-    width: 100%;                   /* Imposta la larghezza del div al 100% della larghezza della viewport */
-    position: relative;            /* Necessario per posizionare l'immagine in modo assoluto se necessario */
-  }
-  .services h2 {
-    font-size: 2.75rem; /* Dimensione del font maggiore per una migliore enfasi */
-    margin-bottom: 2rem;
-    color: #c62828; /* Rosso scuro per coerenza */
-    text-align: center;
-    font-weight: 700; /* Font bold per l'enfasi */
-    line-height: 1.3; /* Altezza della linea migliorata per la leggibilità */
-  }
-  
-  .service-category {
-    margin: 2rem auto;
-    max-width: 900px; /* Maggiore max-width per un layout più spazioso */
-  }
-  
-  .service-item {
-    margin: 2rem 0;
-    padding: 1.5rem; /* Padding aggiunto per una migliore separazione */
-    background-color: #ffffff; /* Sfondo bianco per gli elementi del servizio */
-    border-radius: 8px; /* Angoli arrotondati per un look moderno */
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15); /* Ombra leggermente più profonda per maggiore profondità */
-  }
-  
-  .service-item h4 {
-    font-size: 1.75rem;
-    margin-bottom: 1rem;
-    color: #d32f2f; /* Rosso medio per le intestazioni */
-    font-weight: 600; /* Font semi-bold per una migliore leggibilità */
-    line-height: 1.2; /* Altezza della linea migliorata per la leggibilità */
-  }
-  
-  .service-item ul {
-    list-style-type: disc;
-    padding-left: 1.5rem;
-    color: #555; /* Grigio scuro per il testo */
-  }
-  
-  .service-item li {
-    font-size: 1.125rem;
-    margin-bottom: 0.75rem;
-  }
-  h3 {
-    font-size: 2.25rem; /* Leggermente più grande del solito per enfasi */
-    margin-bottom: 1rem; /* Spazio sotto il titolo */
-    color: #c62828; /* Rosso scuro per coerenza */
-    font-weight: 600; /* Font semi-bold per una migliore leggibilità */
-    text-transform: capitalize; /* Capitalizza solo la prima lettera */
-    letter-spacing: 0.5px; /* Lettere leggermente distanziate per leggibilità */
-    line-height: 1.3; /* Altezza della linea migliorata per la leggibilità */
-  }
-  /* Services FAQ */
-.faq-section {
-    max-width: 900px;
-    margin: 0 auto;
+/* Contenitore principale */
+.container {
+  width: 100%;
+  margin: 0 auto;
+  padding: 20px;
+  box-sizing: border-box;
+}
 
-    background-color: #f9f9f9;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  }
-  
-  h1 {
-    font-size: 2em;
-    text-align: center;
-    margin-bottom: 10px;
-    
-  }
-  
-  h2 {
-    font-size: 1.5em;
-    text-align: center;
-    margin-bottom: 20px;
-    color: #c62828;
-  }
-  
-  .intro-text p {
-    font-size: 1.1em;
-    line-height: 1.6;
-    text-align: justify;
-    margin-bottom: 15px;
-  }
-  
-  .faq-container {
-    margin-top: 20px;
-    padding: 20px;
-  }
-  
-  .faq-item {
-    border-bottom: 1px solid #ddd;
-    padding-bottom: 10px;
-    max-width: 900px;
-    margin: 0 auto;
-    padding: 1rem 2rem;
-  }
-  
-  .faq-question {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    font-weight: bold;
-    cursor: pointer;
-    padding: 15px;
-    background: linear-gradient(to left, #fde0e0, #f9b3b3); 
-    border: 1px solid #f37c7c;
-    border-radius: 8px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Aggiungi ombra */
-    transition: background-color 0.3s ease, box-shadow 0.3s ease;
-    margin-bottom: 10px;
-  }
-  
-  .faq-toggle-icon {
-    font-size: 1.2em;
-    transition: transform 0.3s ease; /* Aggiungi transizione all'icona */
-  }
-  .faq-question:hover {
-    background-color: #f2b2c2; /* Cambia colore su hover */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Aumenta l'ombra su hover */
-  }
-  
-  .faq-answer {
-    padding: 10px;
-    background-color: #fafafa;
-    border-left: 4px solid #c1002a;
-    margin-top: 10px;
-    border-radius: 4px;
-    transition: max-height 0.3s ease;
-  }
-  
-  .faq-icon {
-    font-size: 1.2em;
-    margin-right: 10px;
-    transition: transform 0.3s ease;
-  }
-  
-  p {
-    margin: 0;
-  }
- 
-  .hero2 {
-    background-color: #fde0e0;
-    padding: 6rem 2rem; /* Maggiore padding per una sensazione di spazio */
-    text-align: center;
-    border-bottom: 2px solid #c62828; /* Bordo rosso scuro per l'enfasi */
-    position: relative;
-    margin-bottom: 2rem;
-  }
+/* Griglia delle colonne */
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between; /* Usa space-between per distribuire lo spazio uniformemente */
+}
 
-  @media (max-width: 768px) {
-    .image{
-        height: 34vh;
-      }
+/* Colonne che diventano responsive */
+.column {
+  flex: 1 1 22%; /* Le colonne occupano circa un quinto dello spazio su schermi grandi */
+  max-width: 22%; /* Imposta una larghezza massima per garantire che non occupino troppo spazio */
+  margin: 10px;
+  box-sizing: border-box;
+}
+
+/* Stile delle card */
+.card {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s, box-shadow 0.2s;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%; /* Assicurati che la card occupi tutta l'altezza disponibile */
+}
+
+.card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Corpo della card */
+.card-body {
+  padding: 20px;
+}
+
+.card-title {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  color: #c62828;
+}
+
+.card-text {
+  flex: 1;
+  font-size: 1rem;
+  margin-bottom: 10px;
+}
+
+/* Footer della card */
+.card-footer {
+  padding: 10px;
+  text-align: center;
+}
+
+.card-footer button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.card-footer button:hover {
+  background-color: #0056b3;
+}
+
+/* Layout responsive */
+@media (max-width: 768px) {
+  .column {
+    flex: 1 1 100%; /* Le colonne occupano il 100% su schermi piccoli */
+    max-width: 100%; /* Disattiva la larghezza massima per i dispositivi mobili */
   }
+}
+
+@media (min-width: 769px) and (max-width: 1200px) {
+  .column {
+    flex: 1 1 45%; /* Le colonne occupano circa la metà dello spazio su tablet */
+    max-width: 45%;
+  }
+}
+
+@media (min-width: 1201px) {
+  .column {
+    flex: 1 1 22%; /* Le colonne occupano circa un quinto dello spazio su desktop ampi */
+    max-width: 22%;
+  }
+}

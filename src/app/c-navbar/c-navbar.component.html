@@ -3,10 +3,11 @@
     <a routerLink="/" class="logo">Dott.ssa Roberta Perrone</a>
     
     <ul class="nav-links" [class.active]="isMenuOpen">
-      <li><a routerLink="/home" (click)="closeMenu()">Home</a></li>
-      <li><a routerLink="/servizi" (click)="closeMenu()">Servizi</a></li>
-      <li><a routerLink="/about" (click)="closeMenu()">Chi Siamo</a></li>
-      <li><a routerLink="/contatti" (click)="closeMenu()">Contatti</a></li>
+      <li><a routerLink="/chi_sono_roberta_perrone" (click)="closeMenu()">Home</a></li>
+      <li><a routerLink="/percorsi_psicoterapia" (click)="closeMenu()">Servizi</a></li>
+      <li><a routerLink="/aree_intervento" (click)="closeMenu()">Aree d'Intervento</a></li>
+      <li><a routerLink="/progetti_psicologici" (click)="closeMenu()">Progetti</a></li>
+      <li><a routerLink="/contatti_roberta_perrone" (click)="closeMenu()">Contatti</a></li>
     </ul>
     
     <div class="hamburger" (click)="toggleMenu()">

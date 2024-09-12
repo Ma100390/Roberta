@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { CFiloComponent } from './c-filo.component';
+import { PProgettiComponent } from './p-progetti.component';
 
-describe('CFiloComponent', () => {
-  let component: CFiloComponent;
-  let fixture: ComponentFixture<CFiloComponent>;
+describe('PProgettiComponent', () => {
+  let component: PProgettiComponent;
+  let fixture: ComponentFixture<PProgettiComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [CFiloComponent]
+      imports: [PProgettiComponent]
     })
     .compileComponents();
     
-    fixture = TestBed.createComponent(CFiloComponent);
+    fixture = TestBed.createComponent(PProgettiComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
