@@ -1,28 +1,124 @@
 <div class="container">
   <div class="row">
-    <!-- Itera su tutte le chiavi della mappa dei contenuti -->
-    <div class="column" *ngFor="let tab of tabKeys">
+  
       <div class="card">
-        <div class="card-body">
-          <!-- Titolo dinamico della sezione -->
-          <h3 class="card-title">{{ tabContent[tab].title }}</h3>
-          
-          <!-- Descrizione dinamica della sezione -->
-          <p class="card-text">{{ tabContent[tab].description }}</p>
-          
-          <!-- Paragrafo aggiuntivo o altre informazioni, dinamico -->
-          <p *ngIf="tabContent[tab].extraInfo">{{ tabContent[tab].extraInfo }}</p>
+        <!-- Sezione Infanzia -->
+        <section class="card-body">
+          <div class="svg-container">
+            <svg class="image" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" width="48" height="48">
+              <path
+                d="M224 0a80 80 0 1 1 0 160A80 80 0 1 1 224 0zM436.8 382.8L373.5 462c-16.6 20.7-46.8 24.1-67.5 7.5c-17.6-14.1-22.7-38.1-13.5-57.7l-.8-.1c-38.9-5.6-74.3-25.1-99.7-54.8l0-36.8c0-17.7-14.3-32-32-32s-32 14.3-32 32l0 48c0 .8 0 1.6 .1 2.4l101.4 50.7c23.7 11.9 33.3 40.7 21.5 64.4s-40.7 33.3-64.4 21.5L27.2 427.3c-1.1-.5-2.2-1.1-3.3-1.7c-4.9-2.8-9.2-6.4-12.6-10.6c-4.6-5.4-7.8-11.7-9.6-18.4c-3.3-12-1.9-25.2 4.8-36.6c.6-1.1 1.3-2.2 2-3.2L75.6 256.1c26.7-40.1 71.7-64.1 119.8-64.1l75.2 0c46.5 0 90.1 22.5 117.2 60.3l50.7 70.9c2.2 3 4 6.1 5.5 9.4c2.9 6.7 4.3 13.8 4 20.8c-.3 10.6-4.2 21-11.2 29.4zM320 332a44 44 0 1 0 -88 0 44 44 0 1 0 88 0z" />
+            </svg>
+          </div>
+          <h2 class="card-title">Psicoterapia per l'Infanzia</h2>
+          <p class="card-text">La psicoterapia aiuta i più piccoli ad affrontare le sfide evolutive.<br>
+            Il lavoro con i <strong>bambini</strong> è caratterizzato dall'uso del gioco, della narrazione e del
+            disegno,
+            attraverso cui è possibile accedere al mondo interiore e dare voce ad <strong>emozioni</strong> e
+            <strong>sofferenze</strong>.
+          </p>
+          <div class="card-footer">
+            <a routerLink="/contact" class="btn-secondary">Scopri di più</a>
+          </div>
+          <p class="card-text2">La <strong>coppia genitoriale</strong> è parte integrante del percorso terapeutico. Un
+            aiuto psicologico in tenera età è un fattore altamente preventivo.</p>
 
-          <!-- Lista dinamica (controlla che `list` non sia `undefined`) -->
-          <ul *ngIf="tabContent[tab].list?.length">
-            <li *ngFor="let item of tabContent[tab].list">{{ item }}</li>
-          </ul>
-        </div>
-        <div class="card-footer">
-
-          <a routerLink="/contact" class="btn-secondary">Contattami</a>
-        </div>
+        </section>
       </div>
+
+    <div class="card">
+      <!-- Sezione Adolescenti -->
+      <section class="card-body">
+        <div class="svg-container">
+          <svg class="image" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" width="48" height="48">
+            <path
+              d="M219.3 .5c3.1-.6 6.3-.6 9.4 0l200 40C439.9 42.7 448 52.6 448 64s-8.1 21.3-19.3 23.5L352 102.9l0 57.1c0 70.7-57.3 128-128 128s-128-57.3-128-128l0-57.1L48 93.3l0 65.1 15.7 78.4c.9 4.7-.3 9.6-3.3 13.3s-7.6 5.9-12.4 5.9l-32 0c-4.8 0-9.3-2.1-12.4-5.9s-4.3-8.6-3.3-13.3L16 158.4l0-71.8C6.5 83.3 0 74.3 0 64C0 52.6 8.1 42.7 19.3 40.5l200-40zM111.9 327.7c10.5-3.4 21.8 .4 29.4 8.5l71 75.5c6.3 6.7 17 6.7 23.3 0l71-75.5c7.6-8.1 18.9-11.9 29.4-8.5C401 348.6 448 409.4 448 481.3c0 17-13.8 30.7-30.7 30.7L30.7 512C13.8 512 0 498.2 0 481.3c0-71.9 47-132.7 111.9-153.6z" />
+          </svg>
+          
+        </div>
+
+        <h2 class="card-title">Psicoterapia per Adolescenti</h2>
+        <p class="card-text2">Il lavoro con gli adolescenti è caratterizzato dalla <strong>Flessibilità</strong>,
+          rispetto alla frequenza, agli orari e alla durata stessa del percorso.</p>
+        <p class="card-text">L'adolescenza è un periodo di profondi cambiamenti che riguardano la sfera
+          <strong>fisica</strong>, <strong>emotiva</strong> e <strong>sociale</strong>. La psicoterapia è rivolta ai
+          ragazzi che attraversano momenti di <strong>crisi</strong> e <strong>confusione</strong>, che mettono in
+          discussione <strong>l'immagine di Sé </strong> e ridefiniscono la propria <strong>identità </strong>.
+        </p>
+
+        <div class="card-footer">
+          <a routerLink="/contact" class="btn-secondary">Scopri di più</a>
+        </div>
+      </section>
+    </div>
+    <div class="card">
+      <!-- Sezione Adulti -->
+      <section class="card-body">
+        <div class="svg-container">
+          <svg class="image" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" width="48" height="48">
+            <path
+              d="M184 0c30.9 0 56 25.1 56 56l0 400c0 30.9-25.1 56-56 56c-28.9 0-52.7-21.9-55.7-50.1c-5.2 1.4-10.7 2.1-16.3 2.1c-35.3 0-64-28.7-64-64c0-7.4 1.3-14.6 3.6-21.2C21.4 367.4 0 338.2 0 304c0-31.9 18.7-59.5 45.8-72.3C37.1 220.8 32 207 32 192c0-30.7 21.6-56.3 50.4-62.6C80.8 123.9 80 118 80 112c0-29.9 20.6-55.1 48.3-62.1C131.3 21.9 155.1 0 184 0zM328 0c28.9 0 52.6 21.9 55.7 49.9c27.8 7 48.3 32.1 48.3 62.1c0 6-.8 11.9-2.4 17.4c28.8 6.2 50.4 31.9 50.4 62.6c0 15-5.1 28.8-13.8 39.7C493.3 244.5 512 272.1 512 304c0 34.2-21.4 63.4-51.6 74.8c2.3 6.6 3.6 13.8 3.6 21.2c0 35.3-28.7 64-64 64c-5.6 0-11.1-.7-16.3-2.1c-3 28.2-26.8 50.1-55.7 50.1c-30.9 0-56-25.1-56-56l0-400c0-30.9 25.1-56 56-56z" />
+          </svg>
+        </div>
+        <h2 class="card-title">Psicoterapia per Adulti</h2>
+        <p class="card-text">La psicoterapia psicoanalitica è un viaggio dentro sé stessi alla ricerca delle
+          <strong>cause profonde</strong> del disagio soggettivo. Terapeuta e paziente esplorano insieme il mondo
+          interno ricco di <strong>pensieri</strong>, <strong>ricordi</strong> ed <strong>emozioni</strong> in continua
+          trasformazione. Ogni percorso terapeutico è unico e irripetibile, la persona è accolta e riconosciuta nella
+          sua individualità.
+        </p>
+        <p class="card-text">Il processo di <strong>cura</strong> e di <strong>cambiamento</strong> segue i tempi
+          interni dell'individuo e la sua durata è dunque soggettivamente variabile.</p>
+        <div class="card-footer">
+          <a routerLink="/contact" class="btn-secondary">Scopri di più</a>
+        </div>
+      </section>
+    </div>
+    <div class="card">
+      <!-- Sezione Online -->
+      <section class="card-body">
+
+        <div class="svg-container">
+          <svg class="image" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" width="48" height="48">
+            <path
+              d="M64 32C28.7 32 0 60.7 0 96L0 416c0 35.3 28.7 64 64 64l320 0c35.3 0 64-28.7 64-64l0-320c0-35.3-28.7-64-64-64L64 32zm96 112a48 48 0 1 1 96 0 48 48 0 1 1 -96 0zm80 104c0-30.9 25.1-56 56-56s56 25.1 56 56l0 102.1c0 36.4-29.5 65.9-65.9 65.9c-17.5 0-34.3-6.9-46.6-19.3L184.8 342l-28.1 56.3c-7.9 15.8-27.1 22.2-42.9 14.3s-22.2-27.1-14.3-42.9l48-96c4.6-9.2 13.3-15.6 23.5-17.3s20.5 1.7 27.8 9L240 306.7l0-58.7z" />
+          </svg>
+        </div>
+        <h2 class="card-title">Psicoterapia Online</h2>
+        <p class="card-text">La psicoterapia online è un intervento psicologico a distanza condotto con la stessa
+          attenzione, <strong>empatia</strong> e <strong>competenza</strong> del modello tradizionale. L'incontro tra
+          terapeuta e paziente avviene in <strong>videochiamata</strong> attraverso l'utilizzo delle nuove tecnologie
+          (<strong>tablet</strong>, <strong>smartphone</strong>, <strong>PC</strong>).
+        </p>
+        <p class="card-text2"> Questo servizio è particolarmente utile per chi ha impegni lavorativi intensi, vive
+          lontano o ha limitazioni di mobilità.</p>
+        <div class="card-footer">
+          <a routerLink="/contact" class="btn-secondary">Scopri di più</a>
+        </div>
+      </section>
     </div>
   </div>
-</div>
+    <div class="card">
+      <!-- Sezione Online -->
+      <section class="card-body">
+
+        <div class="svg-container">
+          <svg class="image" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" width="48" height="48">
+            <path
+              d="M64 32C28.7 32 0 60.7 0 96L0 416c0 35.3 28.7 64 64 64l320 0c35.3 0 64-28.7 64-64l0-320c0-35.3-28.7-64-64-64L64 32zm96 112a48 48 0 1 1 96 0 48 48 0 1 1 -96 0zm80 104c0-30.9 25.1-56 56-56s56 25.1 56 56l0 102.1c0 36.4-29.5 65.9-65.9 65.9c-17.5 0-34.3-6.9-46.6-19.3L184.8 342l-28.1 56.3c-7.9 15.8-27.1 22.2-42.9 14.3s-22.2-27.1-14.3-42.9l48-96c4.6-9.2 13.3-15.6 23.5-17.3s20.5 1.7 27.8 9L240 306.7l0-58.7z" />
+          </svg>
+        </div>
+        <h2 class="card-title3">Psicoterapia Online</h2>
+        <p class="card-text3">La psicoterapia online è un intervento psicologico a distanza condotto con la stessa
+          attenzione, <strong>empatia</strong> e <strong>competenza</strong> del modello tradizionale. L'incontro tra
+          terapeuta e paziente avviene in <strong>videochiamata</strong> attraverso l'utilizzo delle nuove tecnologie
+          (<strong>tablet</strong>, <strong>smartphone</strong>, <strong>PC</strong>).
+        </p>
+        <p class="card-text3"> Questo servizio è particolarmente utile per chi ha impegni lavorativi intensi, vive
+          lontano o ha limitazioni di mobilità.</p>
+        <div class="card-footer">
+          <a routerLink="/contact" class="btn-secondary">Scopri di più</a>
+        </div>
+      </section>
+    </div>
+  </div>

@@ -1,14 +1,26 @@
+header{
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+
+}
+
+
 .navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #f8f5f5;
+    background: rgba(255, 255, 255, 0.1); /* Trasparenza */
+    backdrop-filter: blur(10px); /* Sfocatura */
+    -webkit-backdrop-filter: blur(10px); /* Sfocatura per Safari */
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
     padding: 1rem;
     position: relative;
     z-index: 10;
 }
 
 .navbar .logo {
+    font-family: "Lato", sans-serif;
     color:#c95153;
     font-size: 1.5rem;
     text-decoration: none;
@@ -28,6 +40,7 @@
     color:#c95153;
     text-decoration: none;
     font-size: 1.125rem;
+    font-family: "Lato", sans-serif;
 }
 
 .hamburger {

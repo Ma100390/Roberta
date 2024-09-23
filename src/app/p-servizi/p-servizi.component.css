@@ -31,7 +31,8 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  height: 100%; /* Assicurati che la card occupi tutta l'altezza disponibile */
+  height: 100%; 
+  margin: 5% auto;
 }
 
 .card:hover {
@@ -49,13 +50,27 @@
   margin-bottom: 10px;
   color: #c62828;
 }
+.image path {
+  fill:  #611d1d;
+  
 
+}
+.svg-container{
+ text-align: center;
+ margin: 10%;
+ filter: drop-shadow(4px 4px 4px rgba(46, 22, 22, 0.61));
+}
 .card-text {
   flex: 1;
-  font-size: 1rem;
+  font-size: 1.2rem;
   margin-bottom: 10px;
 }
+.card-text2{
+  background-color: #faefef;
 
+  border-radius: 5px;
+  padding: 0.5rem;
+}
 /* Footer della card */
 .card-footer {
   padding: 10px;
@@ -96,4 +111,10 @@
     flex: 1 1 22%; /* Le colonne occupano circa un quinto dello spazio su desktop ampi */
     max-width: 22%;
   }
+}
+.card-title3{
+text-align: center;
+}
+.card-text3{
+  text-align: center;
 }

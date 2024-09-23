@@ -13,14 +13,15 @@ body {
   }
   /* Hero Section */
 .hero {
-    background-color: #f8f5f5; /* Sfondo a gradiente con toni rossi */
-    padding: 6rem 2rem; /* Maggiore padding per una sensazione di spazio */
+  background-color: #f3ebeb;
+  
     text-align: center;
     border-bottom: 2px solid #c62828; /* Bordo rosso scuro per l'enfasi */
     position: relative;
   }
   .btn-secondary {
-    background-color: #c62828; /* Rosso scuro per il pulsante secondario */
+    background: linear-gradient(135deg, #BA5B5B 50%, #611d1d 50%);
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
     color: white;
     padding: 0.75rem 2rem; /* Maggiore padding per un pulsante più prominente */
     text-decoration: none;
