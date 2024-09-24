@@ -52,8 +52,30 @@
 }
 .image path {
   fill:  #611d1d;
-  
+}
+.servizi{
+  background-color: #f3ebeb;
+}  
+.titoloservizi{
+  background-color:#f8f3f3;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s, box-shadow 0.2s;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%; 
+}
 
+h2 {
+  font-size: 2.75rem;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+  color: #fafafa;
+  text-align: center;
+  font-weight: 700;
+  line-height: 1.3;
 }
 .svg-container{
  text-align: center;
@@ -64,14 +86,10 @@
   flex: 1;
   font-size: 1.2rem;
   margin-bottom: 10px;
+  text-align: justify;
 }
-.card-text2{
-  background-color: #faefef;
 
-  border-radius: 5px;
-  padding: 0.5rem;
-}
-/* Footer della card */
+
 .card-footer {
   padding: 10px;
   text-align: center;
@@ -111,10 +129,4 @@
     flex: 1 1 22%; /* Le colonne occupano circa un quinto dello spazio su desktop ampi */
     max-width: 22%;
   }
-}
-.card-title3{
-text-align: center;
-}
-.card-text3{
-  text-align: center;
 }
