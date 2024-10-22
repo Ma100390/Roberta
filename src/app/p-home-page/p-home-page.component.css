@@ -9,13 +9,15 @@ section .about-container {
   align-items: center;
   justify-content: space-between;
   max-width: 1000px;
-  margin: 10% auto;
-  background: linear-gradient(135deg, #ba5b5b00 50%, #2d2d2d17 50%);
+  margin: 0% auto;
+  background: linear-gradient(135deg, #ba5b5b00 50%, #e6e8da 50%);
   clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
-  padding: 2%;
+  padding: 12% 1%;
   border-radius: 12px;
 }
-
+main{
+  background-color: #f3ebeb;
+}
 h1 {
   font-size: 4rem;
   margin: 20%;
@@ -65,7 +67,9 @@ h1 {
   opacity: 1;
   /* Rendi visibile */
   animation: slideIn 1s ease-out forwards;
-  /* Animazione per il contenitore */
+  max-width: 85%;
+  margin:0 auto;
+  border-radius: 16px;
 }
 
 /* Stile per il blockquote */
@@ -75,7 +79,7 @@ blockquote {
   text-align: center;
   font-style: italic;
   /* Testo in corsivo per enfasi */
-  color: #eecdcd;
+  color: #ffffff;
   /* Colore del testo */
   font-size: 2.5rem;
   padding: 1rem;
@@ -148,7 +152,16 @@ h1.visible {
   width: 50%;
   margin-left: 54%;
 }
-
+.contact {
+  padding: 4rem 2rem;
+  /* Maggiore padding per una sensazione di spazio */
+  background-color: #fafafa;
+  /* Grigio chiaro per coerenza */
+  text-align: center;
+}
+a{
+  margin-top: 5%;
+}
 
 
 @media (max-width: 768px) {
@@ -215,7 +228,7 @@ h1.visible {
 .about {
   padding: 4rem 2rem;
   /* Maggiore padding per una sensazione di spazio */
-  background-color: #fafafa;
+  background-color: #f3ebeb;
   /* Sfondo grigio chiaro per un aspetto neutro */
   text-align: center;
 }
@@ -270,13 +283,6 @@ h1.visible {
 
 
 /* Contact Section */
-.contact {
-  padding: 4rem 2rem;
-  /* Maggiore padding per una sensazione di spazio */
-  background-color: #fafafa;
-  /* Grigio chiaro per coerenza */
-  text-align: center;
-}
 
 .contact h2 {
   font-size: 2.75rem;
@@ -345,7 +351,8 @@ section .about-container {
 
   max-width: 1000px;
   margin: 0% auto;
-  background: linear-gradient(135deg, #ba5b5b00 50%, #2d2d2d17 50%);
+  
+  background: linear-gradient(135deg, #ba5b5b00 50%, #e6e8da 50%);
   clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
 }
 

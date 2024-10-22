@@ -1,5 +1,6 @@
 import { RouterLink, RouterModule } from '@angular/router';
 import { Component, ElementRef, AfterViewInit } from '@angular/core';
+import { CFooterComponent } from "../c-footer/c-footer.component";
 
 @Component({
   selector: 'app-p-home-page',
