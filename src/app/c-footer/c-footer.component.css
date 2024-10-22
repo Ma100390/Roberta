@@ -71,6 +71,11 @@ footer {
   .footer-bottom p {
     margin: 0;
   }
+  h3{
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+  }
   .contact-button {
     display: inline-flex;
     align-items: center; /* Allinea l'icona e il testo */

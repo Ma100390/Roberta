@@ -48,7 +48,7 @@ h1 {
 /* Stile del blockquote */
 .hero-content2 {
   background-color: #b33f3f;
-  padding: 6rem 2rem;
+  padding: 4rem 2rem;
   background: linear-gradient(135deg, #BA5B5B 50%, #611d1d 50%);
   clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
   position: relative;
@@ -302,7 +302,7 @@ a{
 
 .hero-content2 {
   background-color: #b33f3f;
-  padding: 6rem 2rem 6rem 2rem;
+  padding: 2rem 2rem 2rem 2rem;
 
 
 
