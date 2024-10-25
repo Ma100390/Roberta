@@ -97,7 +97,17 @@ h2{
 .card-footer button:hover {
   background-color: #0056b3;
 }
-
+@media (max-width: 1250px) {
+  #card{
+    width: 400px;
+    margin: 0;
+   }
+   .row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around; /* Usa space-between per distribuire lo spazio uniformemente */
+  }
+}
 /* Layout responsive */
 @media (max-width: 768px) {
   .column {

@@ -34,13 +34,11 @@ body {
   background-color: #611d1d;
   color: white;
   padding: 0.75rem 2rem;
-  /* Maggiore padding per un pulsante più prominente */
+margin: 0 auto;
   text-decoration: none;
   border-radius: 8px;
-  /* Bordo arrotondato per coerenza con il pulsante primario */
   display: inline-block;
   font-weight: 600;
-  /* Font semi-bold per una migliore leggibilità */
 
 }
 
