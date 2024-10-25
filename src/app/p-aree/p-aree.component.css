@@ -56,7 +56,7 @@ article.service-category {
 /* Singolo elemento della lista */
 .service-item ul li {
   
-  background-color: #ecf0f1;
+  background-color: #f3ebeb;
   padding: 14px 15px 15px 15px;
   border-left: 4px solid  #c62828;
   border-radius: 5px;
