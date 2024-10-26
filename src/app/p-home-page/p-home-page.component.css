@@ -7,7 +7,7 @@ section .about-container {
   justify-content: space-between;
   max-width: 1000px;
   margin: 0% auto;
-  background: linear-gradient(135deg, #ba5b5b00 50%, #e6e8da 50%);
+  background: linear-gradient(135deg, #ba5b5b00 50%, #ded6ca 50%);
   clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
   padding: 12% 1%;
   border-radius: 12px;
@@ -15,6 +15,8 @@ section .about-container {
 
 main {
   background-color: #f3ebeb;
+  max-width: 1150px;
+  margin: 0 auto;
 }
 
 h1 {
@@ -285,7 +287,7 @@ a {
   }
 
   .about-method {
-    width: 100%;
+    width: 95%;
     margin-left: 0%;
     margin-top: 10%;
   }
@@ -293,7 +295,7 @@ a {
   section .about-container {
     max-width: 1000px;
     margin: 0% auto;
-    background: linear-gradient(135deg, #ba5b5b00 50%, #e6e8da 50%);
+
     clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
   }
 
