@@ -1,6 +1,6 @@
 footer {
-    background-color: #BA5B5B;
-    color: #fff;
+    background-color:  #e9d9d9;
+    color: #d13a3a;
     padding: 40px 0;
     font-family: Arial, sans-serif;
   }
@@ -26,7 +26,7 @@ footer {
   }
   
   .footer-column p, .footer-column ul, .footer-column a {
-    color: #ccc;
+    color: #3a3a3a;
     font-size: 14px;
     line-height: 1.8;
   }
@@ -42,7 +42,7 @@ footer {
   
   .footer-column ul li a {
     text-decoration: none;
-    color: #ccc;
+    color: #333232;
   }
   
   .footer-column ul li a:hover {
@@ -52,7 +52,7 @@ footer {
   .social-links a {
     display: inline-block;
     margin-right: 10px;
-    color: #ccc;
+    color: #333232;
     font-size: 20px;
   }
   
@@ -65,7 +65,7 @@ footer {
     padding: 20px;
     border-top: 1px solid #444;
     font-size: 13px;
-    color: #bbb;
+    color: #131212;
   }
   
   .footer-bottom p {

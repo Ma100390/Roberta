@@ -42,18 +42,13 @@ margin: 0 auto;
 
 }
 
-.logo-container img .logo-large{
-  width: 80%;
-  height: 200px;
-
-
-}
-.logo-container img .logo-small{
+.logo-container img {
   width: 100%;
-  height: 200px;
+  height: 250px;
 
 
 }
+
 .btn-secondary:hover {
   background-color: #d32f2f;
   /* Rosso medio al passaggio del mouse */
@@ -92,40 +87,6 @@ margin: 0 auto;
 .logo-small {
   display: none;
 }
-/* Stile del blockquote */
-.hero-content2 {
-  background-color: #b33f3f;
-  padding: 4rem 2rem;
-  background: linear-gradient(135deg, #BA5B5B 50%, #611d1d 50%);
-  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
-  position: relative;
-  /* Necessario per posizionare gli elementi all'interno */
-  opacity: 0;
-  /* Inizialmente invisibile */
-  transition: opacity 1s ease;
-  /* mask-image: repeating-linear-gradient(45deg, rgb(255, 255, 255), rgb(255, 255, 255) 10px, rgba(255, 255, 255, 0.84) 20px); */
-}
-
-/* Effetto animazione per il contenitore quando visibile */
-.hero-content2.visible {
-  opacity: 1;
-  text-align: center;
-  animation: slideIn 1s ease-out forwards;
-
-}
-.hero-content2 p {
-  font-size: 1.4rem;
-  color: #f1eded;
-  font-family: "Lato", sans-serif;
-  font-weight: 400;
-  font-style: italic;
-}
-/* .hero-content2 {
-  background-color: #b33f3f;
-  padding: 2rem 2rem 2rem 2rem;
-  background: linear-gradient(135deg, #BA5B5B 50%, #611d1d 50%);
-  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
-} */
 
 @media (max-width: 768px) {
   .immagineprincipale {
