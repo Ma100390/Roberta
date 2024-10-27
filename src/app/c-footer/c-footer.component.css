@@ -1,6 +1,6 @@
 footer {
-    background-color:  #e9d9d9;
-    color: #d13a3a;
+  background-color: #8f8f8f;
+  color: antiquewhite;
     padding: 40px 0;
     font-family: Arial, sans-serif;
   }
@@ -25,10 +25,11 @@ footer {
     padding-bottom: 5px;
   }
   
-  .footer-column p, .footer-column ul, .footer-column a {
+   .footer-column a {
     color: #3a3a3a;
-    font-size: 14px;
-    line-height: 1.8;
+    font-size: 20px;
+   
+    font-family: "Lato", sans-serif;
   }
   
   .footer-column ul {
@@ -40,10 +41,7 @@ footer {
     margin-bottom: 10px;
   }
   
-  .footer-column ul li a {
-    text-decoration: none;
-    color: #333232;
-  }
+
   
   .footer-column ul li a:hover {
     color: #fff;
@@ -52,7 +50,7 @@ footer {
   .social-links a {
     display: inline-block;
     margin-right: 10px;
-    color: #333232;
+   
     font-size: 20px;
   }
   
@@ -65,7 +63,7 @@ footer {
     padding: 20px;
     border-top: 1px solid #444;
     font-size: 13px;
-    color: #131212;
+    
   }
   
   .footer-bottom p {
@@ -80,8 +78,9 @@ footer {
     display: inline-flex;
     align-items: center; /* Allinea l'icona e il testo */
     text-decoration: none; /* Rimuovi la sottolineatura */
-    color: #ffffff; /* Colore del testo */
-    background-color: #128c7e00; /* Colore di WhatsApp o un colore che preferisci */
+
+    color: #4b0404;
+    background-color: antiquewhite; /* Colore di WhatsApp o un colore che preferisci */
     padding: 8px 12px; /* Spaziatura interna */
     border-radius: 5px; /* Angoli arrotondati */
     transition: background-color 0.3s, transform 0.3s; /* Transizioni per il colore di sfondo e per l'ingrandimento */
