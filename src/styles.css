@@ -43,12 +43,12 @@ margin: 0 auto;
 }
 
 .logo-container img {
-  width: 100%;
-  height: 250px;
+  width: 80%;
+  height: 200px;
 
 
 }
-
+    
 .btn-secondary:hover {
   background-color: #d32f2f;
   /* Rosso medio al passaggio del mouse */
@@ -100,6 +100,12 @@ margin: 0 auto;
   .logo-small {
     display: block;
   }
-
+  .logo-container img {
+    width: 100%;
+    height: 250px;
+  
+  
+  }
+      
 
 }

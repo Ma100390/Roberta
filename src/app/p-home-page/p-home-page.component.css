@@ -7,9 +7,11 @@ section .about-container {
   justify-content: space-between;
   max-width: 1000px;
   margin: 0% auto;
-  background: linear-gradient(330deg, #ba5b5b00 50%, #e9d9d9 50%);
+  background: linear-gradient(330deg, #45454529 50%, #e9d9d9 50%);
+
   clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
-  padding: 12% 1%;
+  /* padding: 12% 1%; */
+  padding: 4% 6%;
   border-radius: 12px;
 }
 
@@ -34,6 +36,27 @@ h1 {
   flex: 1;
 padding: 5%;
 }
+.about p {
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+  color: #611d1d;
+  font-family: "Lato", sans-serif;
+}
+.hero-content2 p {
+  font-size: 1.5rem;
+  color: #611d1d;
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-style: italic;
+}
+.about h2 {
+  font-size: 2.75rem;
+  margin-bottom: 1.5rem;
+  color: #c62828;
+  font-weight: 700;
+  font-family: "Cormorant Garamond", serif;
+  line-height: 1.3;
+}
 
 .about-image {
   flex: 1;
@@ -41,7 +64,7 @@ padding: 5%;
 }
 
 .about-image img {
-  max-width: 400px;
+  max-width: 300px;
   border-radius: 10px;
   filter: contrast(130%);
 }
@@ -57,7 +80,7 @@ padding: 5%;
 /* Stile del blockquote */
 .hero-content2 {
   /* background-color: #b33f3f; */
-  padding: 4rem 2rem;
+  padding: 2rem 2rem;
   /* background: linear-gradient(135deg, #BA5B5B 50%, #611d1d 50%); */
   clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
   position: relative;
@@ -88,7 +111,7 @@ blockquote {
   color: #141414;
   /* Colore del testo */
   font-size: 2.5rem;
-  padding: 1rem;
+  padding: 3rem;
   /* Spazio interno */
   margin: 0 auto;
   /* Centrare il blockquote */
@@ -156,7 +179,7 @@ h1.visible {
 
 .about-method {
   width: 50%;
-  margin-left: 54%;
+
   padding: 5%;
 }
 
@@ -172,7 +195,15 @@ a {
   margin-top: 5%;
 }
 
-
+blockquote {
+  font-size: 1.5rem;
+  font-style: italic;
+  color: #555;
+  padding-left: 1rem;
+}
+.about{
+  margin-bottom: 10rem;
+}
 
 
 @media (max-width: 768px) {
@@ -182,7 +213,10 @@ a {
     z-index: 1;
     position: relative;
   }
-
+  .about{
+    margin-bottom: 5rem;
+  }
+  
   .hero h1 {
     font-size: 2.5rem;
     margin: 5rem 0rem 5rem 0rem;
@@ -192,14 +226,13 @@ a {
     font-weight: 500;
     font-style: normal;
   }
-
-  .hero-content2 p {
-    font-size: 2rem;
-    color: #f1eded;
-    font-family: "Lato", sans-serif;
-    font-weight: 400;
-    font-style: italic;
+  .about p {
+    font-size: 1.25rem;
+    margin-bottom: 2rem;
   }
+.hero-content2 p {
+  font-size: 1.35rem;
+}
 
   .btn-primary {
     background-color: #d32f2f;
@@ -223,21 +256,7 @@ a {
 
   }
 
-  .about h2 {
-    font-size: 2.75rem;
-    margin-bottom: 1.5rem;
-    color: #c62828;
-    font-weight: 700;
-    font-family: "Cormorant Garamond", serif;
-    line-height: 1.3;
-  }
 
-  .about p {
-    font-size: 1.25rem;
-    margin-bottom: 2rem;
-    color: #555;
-    font-family: "Lato", sans-serif;
-  }
 
   .about-container {
     display: flex;
@@ -276,12 +295,9 @@ a {
     /* background: linear-gradient(332deg, #BA5B5B 50%, #611d1d 50%); */
     clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
   }
-
   blockquote {
-    /* border-left: 4px solid #611d1d; */
-    font-style: italic;
-    color: #555;
-    padding-left: 1rem;
+    margin-top: 10%;
+    padding: 0%;
   }
 
   blockquote footer {
@@ -299,7 +315,7 @@ a {
   section .about-container {
     max-width: 1000px;
     margin: 0% auto;
-
+    background: linear-gradient(330deg, #ba5b5b00 50%, #e9d9d9 50%);
     clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
   }
 
