@@ -87,12 +87,32 @@ margin: 0 auto;
 .logo-small {
   display: none;
 }
+.hero-content {   
+  text-align: center;
 
+ margin: 0 auto;
+ z-index: 1;
+ position: relative;
+}
+.hero span {
+  font-size: 2.2rem;
+  font-family: "Cormorant Garamond", serif;
+}
 @media (max-width: 768px) {
   .immagineprincipale {
     width: 100px;
   }
+ 
+  .hero span {
+    font-size: 1.2rem;
+    margin: 5rem 0rem 5rem 0rem;
+    color: #000000;
+    font-weight: 700;
+    line-height: 1.2;
+    font-weight: 500;
+    font-style: normal;
 
+  }
   .logo-large {
     display: none;
   }

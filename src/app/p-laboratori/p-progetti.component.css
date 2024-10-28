@@ -52,6 +52,7 @@
 /* Place the container to the left */
 .left {
     left: 0;
+    
 }
 
 /* Place the container to the right */
@@ -61,6 +62,7 @@
 
 .right time {
     text-align: left;
+    
 }
 
 .left time {
@@ -176,6 +178,15 @@ ul {
     font-style: italic; /* Mantiene il testo in corsivo */
     color: #333; /* Colore del testo */
   }
+  .hero-content{
+    background-color:#f3ebeb ;
+    padding-top: 10%;
+    
+  }
+.hero{
+    padding-bottom: 10%;
+}
+  
 /* Responsive styles */
 @media screen and (max-width: 600px) {
     .timeline::after {

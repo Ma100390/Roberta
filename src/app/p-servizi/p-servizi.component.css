@@ -10,7 +10,7 @@
 .row {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between; /* Usa space-between per distribuire lo spazio uniformemente */
+  justify-content: space-around;
 }
 
 /* Colonne che diventano responsive */
@@ -23,7 +23,7 @@
 
 /* Stile delle card */
 .card {
-  background-color: #fff;
+  background-color:  #e9d9d9;
   border: 1px solid #ddd;
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -37,47 +37,53 @@
   margin: 5% auto;
   display: block;
 }
-
+#card-body {
+  padding: 5% 30%;
+}
 /* Corpo della card */
 .card-body {
-  padding: 20px;
+  padding: 10%;
 }
 
 .card-title {
   font-size: 1.5rem;
-  margin-bottom: 10px;
+  text-transform: uppercase;
   color: #c62828;
+  letter-spacing: 2px;
+  font-weight: bold;
+  font-family: "Cormorant Garamond", serif;
+  margin-bottom: 1.5rem;
+  text-align: center;
 }
 .image path {
   fill:  #611d1d;
 }
+#svg-container{
+
+  margin: 10%;
+ 
+ }
 
 
 
-h2{
-  font-size: 3em;
-  font-family: 'Arial', sans-serif;
-  color: #BA5B5B;
-  text-transform: uppercase;
-  letter-spacing: 2px;
-  font-weight: bold;
-  position: relative;
-
-  text-align: center;
-}
 
 .svg-container{
  text-align: center;
- margin: 2%;
+ margin: 10%;
  filter: drop-shadow(4px 4px 4px rgba(46, 22, 22, 0.61));
 }
 .card-text {
   flex: 1;
-  font-size: 1.2rem;
-  margin-bottom: 10px;
   text-align: justify;
+  font-size: 1rem;
+  
+  margin-bottom: 0.5rem;
+  color: #611d1d;
+  font-family: "Lato", sans-serif;
 }
-
+.hero-content{
+  margin: 10% auto;
+}
 
 .card-footer {
   padding: 10px;
@@ -110,6 +116,16 @@ h2{
 }
 /* Layout responsive */
 @media (max-width: 768px) {
+  .card-text {
+    font-size: 1.25rem;
+    margin-bottom: 2rem;
+  }
+  .card-body {
+    padding: 6%;
+  }
+  #card-body{
+     padding: 6%;
+}
   .column {
     flex: 1 1 100%; /* Le colonne occupano il 100% su schermi piccoli */
     max-width: 100%; /* Disattiva la larghezza massima per i dispositivi mobili */
@@ -125,9 +141,7 @@ h2{
     height: 100%; 
     margin: 5% auto;
   }
-  .svg-container{
-    margin: 10%;
-   }
+
    #card{
     width: 100%;
    }

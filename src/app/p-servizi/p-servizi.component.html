@@ -1,6 +1,7 @@
 <div class="servizi">
   <div class="titoloservizi">
-    <img class="immagineprincipale" src="assets/Images/logo_dello_studio_Roberta_Perrone.svg" alt="Logo dello Studio di Veglie e Lecce della Dottoressa Roberta Perron">
+    <img class="immagineprincipale" src="assets/Images/logo_dello_studio_Roberta_Perrone.svg"
+      alt="Logo dello Studio di Veglie e Lecce della Dottoressa Roberta Perron">
     <h1 class="titoloprincipale">I nostri Percorsi</h1>
   </div>
   <div class="container">
@@ -49,7 +50,9 @@
           <p class="card-text">Il lavoro con gli adolescenti è caratterizzato dalla <strong>Flessibilità</strong>,
             rispetto alla frequenza, agli orari e alla durata stessa del percorso.</p>
           <p class="card-text">L'adolescenza è un periodo di profondi cambiamenti che riguardano la sfera
-            <strong>fisica</strong>, <strong>emotiva</strong> e <strong>sociale</strong>. La psicoterapia è rivolta ai
+            <strong>fisica</strong>, <strong>emotiva</strong> e <strong>sociale</strong>.
+          </p>
+          <p class="card-text"> La psicoterapia è rivolta ai
             ragazzi che attraversano momenti di <strong>crisi</strong> e <strong>confusione</strong>, che mettono in
             discussione <strong>l'immagine di Sé </strong> e ridefiniscono la propria <strong>identità </strong>.
           </p>
@@ -79,16 +82,17 @@
           <p class="card-text">Il processo di <strong>cura</strong> e di <strong>cambiamento</strong> segue i tempi
             interni dell'individuo e la sua durata è dunque soggettivamente variabile.</p>
           <div class="card-footer">
-            <a routerLink="/aree_intervento" class="btn-secondary">Scopri di più</a>
+            <a routerLink="/aree_intervento" [fragment]="isMobile ? 'obiettivi' : undefined"
+              class="btn-secondary">Scopri di più</a>
           </div>
         </section>
       </div>
 
       <div id="card" class="card">
         <!-- Sezione Online -->
-        <section class="card-body">
+        <section id="card-body" class="card-body">
 
-          <div class="svg-container">
+          <div id="svg-container" class="svg-container">
             <svg class="image" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" width="48" height="48">
               <path
                 d="M64 0C28.7 0 0 28.7 0 64L0 352c0 35.3 28.7 64 64 64l176 0-10.7 32L160 448c-17.7 0-32 14.3-32 32s14.3 32 32 32l256 0c17.7 0 32-14.3 32-32s-14.3-32-32-32l-69.3 0L336 416l176 0c35.3 0 64-28.7 64-64l0-288c0-35.3-28.7-64-64-64L64 0zM512 64l0 288L64 352 64 64l448 0z" />
@@ -109,11 +113,14 @@
         </section>
       </div>
     </div>
-    <div class="logo-container">
-      <img class="logo-large" src="assets/Images/logo_dello_studio_Roberta_Perrone_Filo.webp"
-        alt="Logo dello Studio di Lecce della Dottoressa Roberta Perrone">
-      <img class="logo-small" src="assets/Images/logo_dello_studio_Roberta_Perrone_Filo.svg"
-        alt="Logo dello Studio della provincia di Lecce della Dottoressa Roberta Perrone">
-    </div>
+    <section class="hero">
+      <div class="hero-content">
+        <div class="logo-container">
+          <img class="logo-large" src="assets/Images/logo_dello_studio_Roberta_Perrone_Filo.webp" alt="Logo dello Studio di Veglie della Dottoressa Roberta Perrone">
+          <img class="logo-small" src="assets/Images/logo_dello_studio_Roberta_Perrone_Filo.svg" alt="Logo dello Studio di Lecce della Dottoressa Roberta Perrone">
+        </div>
+        <span>Psicologa e Psicoterapeuta <br> ad orientamento psicoanalitico </span>
+      </div>
+    </section>
   </div>
 </div>

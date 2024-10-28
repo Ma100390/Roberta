@@ -9,13 +9,14 @@ import { RouterModule } from '@angular/router';
   styleUrls: ['./p-servizi.component.css']
 })
 export class PsicoterapiaComponent implements AfterViewInit {
-
+  isMobile: boolean = false;
 
     constructor(private el: ElementRef) {}
   
     ngAfterViewInit(): void {
       this.setupHeroContentObservers();
       this.setupH1Observer();
+      this.isMobile = window.innerWidth <= 768;
     }
   
     private setupHeroContentObservers(): void {
