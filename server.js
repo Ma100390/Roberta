@@ -3,7 +3,7 @@ const path = require('path');
 const app = express();
 
 // Servire i file statici dall'app Angular buildata
-app.use(express.static(path.join(__dirname, 'dist//browser/app2')));
+app.use(express.static(path.join(__dirname, 'dist/app2/browser')));
 
 // Gestire tutte le richieste in modo che vengano servite dall'app Angular
 app.get('/*', function (req, res) {
