@@ -87,16 +87,19 @@ a:hover {
   text-decoration: underline;
 }
 .service-item ul li:nth-child(odd) {
-  background-color: #ffffff00;
+  background-color: #e9d9d9;
 
 }
+.btn-secondary {
 
+  margin: 5% auto;
+}
 /* Applica uno stile agli <li> pari */
 .service-item ul li:nth-child(even) {
-  background-color: #e9d9d9;
+  background-color: #ffffff00;
 }
-.service-item ul li:first-of-type {
-  border-top: 4px solid  #c62828;
+.service-item ul li:last-of-type {
+  border-bottom: 4px solid #c62828;
 }
 .hero-content{
   background-color:#f3ebeb ;

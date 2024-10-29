@@ -89,7 +89,10 @@
   padding: 10px;
   text-align: center;
 }
+.btn-secondary {
 
+  margin: 5% auto;
+}
 .card-footer button {
   background-color: #007bff;
   color: white;

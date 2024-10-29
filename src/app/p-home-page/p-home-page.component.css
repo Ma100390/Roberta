@@ -201,17 +201,16 @@ blockquote {
   color: #555;
   padding-left: 1rem;
 }
-.about{
-  margin-bottom: 10rem;
-}
 
+.about {
+  padding: 0rem 1rem 5rem 0rem;
+  background-color: #f3ebeb;
+
+}
 
 @media (max-width: 768px) {
 
-  .about{
-    margin-bottom: 5rem;
-  }
-  
+
   .hero h1 {
     font-size: 2.5rem;
     margin: 5rem 0rem 5rem 0rem;
@@ -246,7 +245,7 @@ blockquote {
   }
 
   .about {
-    padding: 0rem 1rem;
+    padding: 0rem 1rem 5rem 0rem;
     background-color: #f3ebeb;
 
   }

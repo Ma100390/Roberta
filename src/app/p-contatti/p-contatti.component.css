@@ -1,123 +1,134 @@
-/* Global Styles */
-body {
+/* Sezione di Contatto */
+.contact-section {
+  padding: 4rem 2rem;
+  background-color: #e9d9d9;
+  text-align: center;
   font-family: Arial, sans-serif;
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  line-height: 1.6;
 }
 
-
-/* Sezione Hero */
-.contact-hero {
-  background-color: #f3ebeb;
-  padding: 20px 20px;
-  text-align: center;
-}
-
-.contact-hero h1 {
-  font-size: 2.5rem;
-  margin-bottom: 10px;
+.section-title {
+  font-size: 2.2rem;
   color: #333;
+  margin-bottom: 0.5rem;
 }
 
-.contact-hero p {
-  font-size: 1.2rem;
-  font-weight: bold;
-  color: #000000;
+.section-description {
+  font-size: 1rem;
+  color: #666;
+  margin-bottom: 2.5rem;
 }
 
-/* Sezione Informazioni con Riquadri (Cards) */
+/* Griglia per le Contact Card */
 .contact-info {
-
-  padding: 40px 20px;
-  margin-top: 30px;
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  margin: 0 auto;
+  max-width: 900px;
 }
 
-.contact-info h2 {
-  font-size: 2rem;
-  margin-bottom: 20px;
-  color: #333;
-  text-align: center;
-}
-
-.contact-cards {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  gap: 20px;
-}
-
-/* Stile dei Riquadri (Cards) */
+/* Contact Card */
 .contact-card {
-  background-color: #f8f9fa;
-  border-radius: 8px;
-  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
-  padding: 20px;
+  background-color: #f3ebeb;
+  border-radius: 10px;
+  padding: 1.5rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease;
   text-align: center;
-  flex: 1;
-  min-width: 200px;
+}
+
+.contact-card:hover {
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+}
+
+.icon {
+  background-color: #cf5f5f42;
+  color: #611d1d;
+  border-radius: 20%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  height: 50px;
+  margin-bottom: 1rem;
+}
+
+.icon {
+  font-size: 1.5rem;
 }
 
 .contact-card h3 {
-  font-size: 1.5rem;
-  margin-bottom: 10px;
+  font-size: 1.2rem;
   color: #333;
+  margin-bottom: 0.5rem;
 }
 
 .contact-card p {
-  font-size: 1.1rem;
-  color: #555;
+  font-size: 0.7rem;
+  color: #666;
 }
 
 .contact-card a {
-  color: #007bff;
+  color: #611d1d;
   text-decoration: none;
+  transition: color 0.3s ease;
 }
 
-.contact-card a:hover {
-  text-decoration: underline;
+
+
+/* Mappa */
+.map-section {
+  margin-top: 3rem;
 }
 
-/* Stile delle Icone */
-.contact-icon {
-  width: 40px;
-  height: 40px;
-  margin-bottom: 10px;
-}
-
-/* Map Section */
-.map-container {
-  margin-top: 30px;
-  padding: 40px 20px;
-  background-color: #f8f9fa;
-  border-radius: 8px;
-  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
-}
-
-.map-container h2 {
-  font-size: 2rem;
-  margin-bottom: 20px;
-  text-align: center;
+.map-section h3 {
+  font-size: 1.8rem;
   color: #333;
+  margin-bottom: 1.5rem;
 }
 
-.map-container iframe {
+.map-container {
   width: 100%;
-  height: 400px;
-  border: none;
+  max-width: 800px;
+  margin: 0 auto;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.map-image {
+  width: 100%;
+  height: auto;
+  display: block;
   border-radius: 8px;
 }
+.section-title {
+  font-size: 2.5rem;               /* Dimensione del font per una buona visibilità */
+  color: #2C3E50;                  /* Colore scuro per un aspetto professionale */
+  text-align: center;              /* Allineamento al centro */
+  font-weight: 600;                /* Font più spesso per dare risalto */
+  margin-bottom: 1rem;             /* Spazio sotto il titolo */
+  position: relative;
+}
 
-/* Responsive Styles */
+.section-title::after {
+  content: "";                     /* Crea una linea decorativa sotto il titolo */
+  width: 80px;                     /* Larghezza della linea */
+  height: 4px;                     /* Spessore della linea */
+  background-color: #5a2020;       /* Colore della linea */
+  display: block;
+  margin: 0.5rem auto 0;           /* Posizionamento centrale e margine sopra/sotto */
+  border-radius: 2px;              /* Angoli arrotondati */
+}
+
+.section-title:hover {
+  color: #db3434;                  /* Cambio colore al passaggio del mouse */
+  transition: color 0.3s ease;     /* Transizione morbida */
+}
+
 @media (max-width: 768px) {
-  .contact-cards {
-    flex-direction: column;
-    align-items: center;
-  }
+  .contact-card p {
+    font-size: 1.5rem;
 
-  .contact-card {
-    width: 100%;
-    max-width: 400px;
   }
 }
